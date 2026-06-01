@@ -23,9 +23,9 @@ namespace ProductOrdering
             Customer customer2 = new Customer("Caio Nogueira", address2);
             Order order2 = new Order(customer2);
 
-            order2.AddProduct(new Product("UltraWide Monitor 27\"", "MON-34X", 350.00, 1));
-            order2.AddProduct(new Product("HDMI 2.1 Cable 2m", "CBL-HDMI21", 15.25, 3));
-            order2.AddProduct(new Product("Desk Pad Mat", "MAT-XL", 25.00, 1));
+            order2.AddProduct(new Product("Monitor 27\"", "MON-34X", 350.00, 1));
+            order2.AddProduct(new Product("HDMI 2.1 Cable", "CBL-HDMI21", 15.25, 3));
+            order2.AddProduct(new Product("Desk Pad", "MAT-XL", 25.00, 1));
 
             // ------------------------------------------------------------
             // Display Results
