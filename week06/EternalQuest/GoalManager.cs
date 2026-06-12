@@ -32,7 +32,7 @@ public class GoalManager
                 case "4": LoadGoals(); break;
                 case "5": RecordGoalEvent(); break;
                 case "6": quit = true; break;
-                default: Console.WriteLine("Invalid option. Press Enter to retry."); Console.ReadLine(); break;
+                default: Console.WriteLine("Invalid option. Please press Enter to retry."); Console.ReadLine(); break;
             }
         }
     }
@@ -89,7 +89,7 @@ public class GoalManager
                 _goals.Add(new ChecklistGoal(name, description, points, target, bonus));
                 break;
             default:
-                Console.WriteLine("Invalid goal type creation cancelled.");
+                Console.WriteLine("Invalid goal type creation cancelled");
                 break;
         }
     }
