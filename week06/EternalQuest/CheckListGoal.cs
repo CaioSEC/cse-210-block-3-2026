@@ -11,7 +11,6 @@ public class ChecklistGoal : Goal
         _bonus = bonus;
     }
 
-    // Overloaded constructor for loading saved data
     public ChecklistGoal(string name, string description, int points, int amountCompleted, int target, int bonus) : base(name, description, points)
     {
         _amountCompleted = amountCompleted;
@@ -30,7 +29,6 @@ public class ChecklistGoal : Goal
         _amountCompleted++;
         int pointsAwarded = GetPoints();
 
-        // Check if the milestone target has just been hit
         if (_amountCompleted == _target)
         {
             pointsAwarded += _bonus;

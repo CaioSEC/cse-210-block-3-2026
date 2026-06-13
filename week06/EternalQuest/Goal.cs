@@ -13,12 +13,10 @@ public abstract class Goal
         _points = points;
     }
 
-    // Encapsulation via Getters
     public string GetShortName() => _shortName;
     public string GetDescription() => _description;
     public int GetPoints() => _points;
 
-    // Polymorphic methods to be overridden by child classes
     public abstract int RecordEvent();
     public abstract bool IsComplete();
     public abstract string GetDetailsString();

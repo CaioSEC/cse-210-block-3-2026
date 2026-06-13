@@ -144,7 +144,7 @@ public class GoalManager
             return;
         }
 
-        _goals.Clear(); // Clear current goals before loading new ones
+        _goals.Clear();
         string[] lines = File.ReadAllLines(filename);
         
         _score = int.Parse(lines[0]);

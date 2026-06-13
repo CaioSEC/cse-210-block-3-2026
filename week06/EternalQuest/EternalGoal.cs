@@ -5,10 +5,10 @@ public class EternalGoal : Goal
 
     public override int RecordEvent()
     {
-        return GetPoints(); // Always active, awards points endlessly
+        return GetPoints();
     }
 
-    public override bool IsComplete() => false; // Eternal goals are never finished
+    public override bool IsComplete() => false; 
 
     public override string GetDetailsString()
     {
